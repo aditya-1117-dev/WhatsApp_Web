@@ -5,8 +5,8 @@ import http from 'http';
 import { Server } from 'socket.io';
 
 import connectDB from './config/db';
-import webhookRoutes from './routes/webhook.routes';
-import conversationRoutes from './routes/conversations.routes';
+import webhookRoutes from './routes/webhook';
+import conversationRoutes from './routes/conversations';
 
 dotenv.config();
 connectDB();
