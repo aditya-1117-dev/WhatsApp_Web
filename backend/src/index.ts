@@ -34,10 +34,10 @@ app.use('/api', webhookRoutes);
 app.use('/api', conversationRoutes);
 
 io.on('connection', (socket) => {
-    console.log('A user connected:');
+    console.log('A user connected');
 
     socket.on('disconnect', () => {
-        console.log('User disconnected:');
+        console.log('User disconnected');
     });
 });
 
