@@ -1,5 +1,6 @@
-import React, { createContext, useState, useContext, ReactNode, useEffect, useCallback } from 'react';
+import {createContext, useState, useContext, useEffect, useCallback} from 'react';
 import apiService from '../api/apiService';
+import type { ReactNode } from 'react';
 import { useSocket } from '../hooks/useSocket';
 
 export interface IMessage {
